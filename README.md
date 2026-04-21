@@ -7,7 +7,7 @@ I build scientific software for understanding complex systems in mass spectromet
 
 This GitHub brings together projects developed across computational mass spectrometry, mechanistic modeling, research infrastructure, and knowledge systems. Although the domains differ, the underlying approach is consistent: translating scientific assumptions into explicit computational objects and designing workflows that preserve structure instead of collapsing it too early. Taken together, these repositories reflect an ongoing effort to make complex problems easier to represent, test, and reason about.
 
-Contact: [email](edwinchingate@gmail.com)
+Contact: edwinchingate@gmail.com
 
 ## What I build
 

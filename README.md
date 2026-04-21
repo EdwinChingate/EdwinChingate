@@ -7,6 +7,8 @@ I build scientific software for understanding complex systems in mass spectromet
 
 This GitHub brings together projects developed across computational mass spectrometry, mechanistic modeling, research infrastructure, and knowledge systems. Although the domains differ, the underlying approach is consistent: translating scientific assumptions into explicit computational objects and designing workflows that preserve structure instead of collapsing it too early. Taken together, these repositories reflect an ongoing effort to make complex problems easier to represent, test, and reason about.
 
+Contact: [email](edwinchingate@gmail.com)
+
 ## What I build
 
 `ms2Topo` is my flagship project: an MS2-first, topology-driven workflow for LC-HRMS/MS feature extraction, spectral redundancy reduction, consensus-spectrum construction, and cross-sample alignment. It grew out of a broader attempt to find better representational units for repeated fragmentation evidence in DDA LC-HRMS/MS. It extends ideas first explored in `OrbiFragsNets`, a published Python method for Orbitrap MS2 annotation that encodes fragmentation chemistry and accurate-mass uncertainty directly into graph structure through weighted peak statistics, confidence intervals, and chemically admissible fragment relations.

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="home">
+  <section class="hero">
+    <p class="eyebrow">Scientific software · research · writing</p>
+    <h1>Making complex scientific systems easier to represent, test, and understand.</h1>
+    <div class="hero-copy prose">{{ content }}</div>
+    <div class="hero-actions">
+      <a class="button button--primary" href="{{ '/about/' | relative_url }}">About me <span aria-hidden="true">↗</span></a>
+      <a class="button button--quiet" href="{{ '/projects/' | relative_url }}">Explore projects <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="home-section" aria-labelledby="explore-title">
+    <div class="section-heading"><p class="eyebrow">Explore</p><h2 id="explore-title">Follow the work and the ideas</h2></div>
+    <div class="section-grid">
+      <a class="section-card" href="{{ '/research/' | relative_url }}"><span class="section-card__number">01</span><h3>Research</h3><p>Scientific questions, methods, and computational approaches.</p><span class="section-card__arrow" aria-hidden="true">↗</span></a>
+      <a class="section-card" href="{{ '/projects/' | relative_url }}"><span class="section-card__number">02</span><h3>Projects</h3><p>Open software and the problems it is built to address.</p><span class="section-card__arrow" aria-hidden="true">↗</span></a>
+      <a class="section-card" href="{{ '/writing/' | relative_url }}"><span class="section-card__number">03</span><h3>Writing</h3><p>Space for reflections and longer essays as they are published.</p><span class="section-card__arrow" aria-hidden="true">↗</span></a>
+      <a class="section-card" href="{{ '/stories/' | relative_url }}"><span class="section-card__number">04</span><h3>Stories</h3><p>Narrative pieces and experiences, when ready to share.</p><span class="section-card__arrow" aria-hidden="true">↗</span></a>
+      <a class="section-card" href="{{ '/notes/' | relative_url }}"><span class="section-card__number">05</span><h3>Notes</h3><p>Shorter, connected ideas in a digital garden.</p><span class="section-card__arrow" aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</div>

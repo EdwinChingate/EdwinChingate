@@ -1,0 +1,17 @@
+{% assign entries = site[include.collection] | sort: 'date' | reverse %}
+{% if entries.size > 0 %}
+  <div class="entry-list">
+    {% for entry in entries %}
+      <article class="entry-card">
+        <div class="entry-meta">
+          {% if entry.date %}<time datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%-d %B %Y' }}</time>{% endif %}
+          {% if entry.tags and entry.tags.size > 0 %}<span>· {{ entry.tags | join: ', ' }}</span>{% endif %}
+        </div>
+        <h2><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h2>
+        {% if entry.description %}<p>{{ entry.description }}</p>{% endif %}
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <p class="empty-state">Nothing published here yet. This section is ready for future Markdown entries.</p>
+{% endif %}

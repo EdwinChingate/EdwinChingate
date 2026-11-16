@@ -1,0 +1,12 @@
+- name: ms2Topo
+  url: https://github.com/EdwinChingate/ms2Topo
+  description: An MS2-first workflow for LC-HRMS/MS feature extraction, spectral redundancy reduction, consensus spectra, and cross-sample alignment.
+- name: OrbiFragsNets
+  url: https://github.com/EdwinChingate/OrbiFragsNets
+  description: A Python method for Orbitrap MS2 annotation that represents fragmentation chemistry and accurate-mass uncertainty in a graph.
+- name: Retentostat_control_system
+  url: https://github.com/EdwinChingate/Retentostat_control_system
+  description: Software for closed-loop experimental infrastructure, including staged pump logic, serial communication, run logging, and fault handling.
+- name: Funciones-tesis
+  url: https://github.com/EdwinChingate/Funciones-tesis
+  description: R workflows for BacArena-based modeling of electroactive microbial systems.

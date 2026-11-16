@@ -87,7 +87,7 @@ h3 { font-size: 1.25rem; }
 .prose hr { border: 0; border-top: 1px solid var(--border); margin-block: 2.5rem; }
 
 .hero { padding-block: clamp(2rem, 7vw, 6rem) clamp(3.5rem, 7vw, 6rem); border-bottom: 1px solid var(--border); }
-.hero h1 { max-width: 15ch; margin: 0 0 1.6rem; font-size: clamp(2.7rem, 6.8vw, 5.7rem); }
+.hero h1 { max-width: 19ch; margin: 0 0 1.6rem; font-size: clamp(2.7rem, 5.5vw, 4.6rem); }
 .hero-copy { max-width: 65ch; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.28rem); }
 .hero-copy p { margin-bottom: 0; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
@@ -104,6 +104,9 @@ h3 { font-size: 1.25rem; }
 .section-card h3 { margin: 1rem 0 .5rem; }
 .section-card p { margin: 0; color: var(--muted); font-size: .93rem; line-height: 1.6; }
 .section-card__arrow { position: absolute; right: 1.4rem; bottom: 1rem; color: var(--accent); }
+.profile-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; padding-top: 4rem; }
+.profile-paths h2 { margin: 0 0 .7rem; }
+.profile-paths p:not(.eyebrow) { max-width: 48ch; margin: 0; color: var(--muted); }
 
 .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 2rem 0 3rem; }
 .project-card, .entry-card { padding: 1.25rem 1.5rem; border: 1px solid var(--border); border-radius: .6rem; background: var(--surface); }
@@ -129,7 +132,7 @@ h3 { font-size: 1.25rem; }
   .site-main { padding-block: 2rem 3.5rem; }
   .hero { padding-top: 1.5rem; }
   .hero h1 { font-size: clamp(2.4rem, 11vw, 3.5rem); }
-  .section-grid, .project-grid { grid-template-columns: 1fr; }
+  .section-grid, .project-grid, .profile-paths { grid-template-columns: 1fr; }
   .section-card { min-height: 10rem; }
   .page-heading { margin-bottom: 2rem; }
 }

@@ -1,0 +1,64 @@
+title: Edwin Chingate
+description: Scientific software, research, projects, and writing by Edwin Chingate.
+url: https://edwinchingate.github.io
+baseurl: /EdwinChingate
+lang: en
+markdown: kramdown
+permalink: pretty
+
+collections:
+  writing:
+    output: true
+    permalink: /writing/:name/
+  stories:
+    output: true
+    permalink: /stories/:name/
+  research:
+    output: true
+    permalink: /research/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  notes:
+    output: true
+    permalink: /notes/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: writing
+    values:
+      layout: article
+  - scope:
+      path: ""
+      type: stories
+    values:
+      layout: article
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: article
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: article
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: article
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - SITE_GUIDE.md
+  - content_templates
+  - scripts
+  - vendor
+  - node_modules

@@ -1,0 +1,28 @@
+name: Check site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build project site
+        run: bundle exec jekyll build --baseurl /EdwinChingate
+      - name: Check internal links
+        run: python3 scripts/check_site.py _site /EdwinChingate
+      - name: Keep preview output
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: _site

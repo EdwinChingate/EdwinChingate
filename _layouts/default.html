@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} — Home">Edwin Chingate<span class="site-brand__mark">/</span></a>
+        <nav class="site-nav" aria-label="Main navigation">
+          {% for item in site.data.navigation %}
+            <a href="{{ item.url | relative_url }}"{% if page.nav_key == item.key or page.collection == item.key %} aria-current="page"{% endif %}>{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+    <div class="site-shell">
+      {% include breadcrumbs.html %}
+      <main id="main-content" class="site-main" tabindex="-1">{{ content }}</main>
+    </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <span>© {{ 'now' | date: '%Y' }} Edwin Chingate</span>
+        <span><a href="https://github.com/EdwinChingate">GitHub</a> · <a href="mailto:edwinchingate@gmail.com">Email</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

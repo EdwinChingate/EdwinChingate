@@ -1,0 +1,13 @@
+{% if page.url != '/' %}
+  {% assign section_key = page.collection | default: page.nav_key %}
+  {% assign section = site.data.navigation | where: 'key', section_key | first %}
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      {% if page.collection and section %}
+        <li><a href="{{ section.url | relative_url }}">{{ section.title }}</a></li>
+      {% endif %}
+      <li aria-current="page">{{ page.title }}</li>
+    </ol>
+  </nav>
+{% endif %}

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article class="article prose">
+  <header class="page-heading">
+    {% assign section = site.data.navigation | where: 'key', page.collection | first %}
+    {% if section %}<p class="eyebrow">{{ section.title }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+    <div class="article-meta">
+      {% if page.date %}<time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%-d %B %Y' }}</time>{% endif %}
+      {% if page.tags and page.tags.size > 0 %}<span>· {{ page.tags | join: ', ' }}</span>{% endif %}
+    </div>
+  </header>
+  <div class="article-body">{{ content }}</div>
+  {% if section %}<p class="article-return"><a href="{{ section.url | relative_url }}">← Back to {{ section.title }}</a></p>{% endif %}
+</article>
